@@ -3,19 +3,20 @@ body{
   font-size: 22px;
   color: seashell;
   background-color: black;
-  -opacity: 0.9;
+  opacity: 0.9;
   text-align: center;
 }
 .flex-container{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 header{
   height: 69px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   background-color: black;
   border-bottom: 1px solid seashell;
@@ -42,5 +43,21 @@ a {
 }
 
 .main{
-  display: flex;
+  align-items: center;
+  width: 100%
+}
+
+#mission {
+  height: 700px;
+  width:100%;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 70px;
+}
+
+#mission .content {
+    margin: auto;
+    background-color: black;
+    width: 100%;
 }
